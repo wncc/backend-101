@@ -12,9 +12,9 @@ source ./venv/bin/activate # Linux/MacOS
 Now, install Django using `pip`.
 ```shell
 # Install Django
-pip install django
+pip install Django
 ```
-The last step is to make a new Django project and try running it.
+Finally, make a new Django project and try running it.
 ```shell
 # Start a new Django project
 django-admin startproject testapp

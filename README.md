@@ -15,28 +15,11 @@ By Shivesh Gupta and Pranav Prakash
   - SQL vs NoSQL
   - Request Response Cycle
   - Status Codes
+  - API Testing Tool (Postman)
+
 - **Django Framework**
-  - Role of sqlite in django
-  - Document structure
-  - HTML elements
-  - Tags
-  - Attributes
-  - Data representation
-  - Tables
-  - Links
-- **CSS**
-  - Role of CSS
-  - Syntax
-  - Selectors
-  - Common CSS Properties
-  - Centering a Div
-  - Responsive design
--  **Creating your own webpages**
-
- 
-[HTML >>](html.md)    
-[CSS >>](css.md)
-
+  - About Django 
+  - Default Database in Django
 
 
 

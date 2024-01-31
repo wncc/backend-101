@@ -38,6 +38,9 @@ view auth_user in sqlite viewer
 
 python manage.py startapp myapp
 
+
+in models.py create a model for item
+
 pip install djangorestframework
 
 

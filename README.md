@@ -26,8 +26,9 @@ By Shivesh Gupta and Pranav Prakash
   
 - **Django Rest Framework**
   - Restful APIs
-  - Serializers
-  -
+  - Serializers and Classes
+  - Admin
+  - API Testing
 
 ## Postman
 Postman is a comprehensive API development and testing platform. It simplifies the creation and management of APIs by offering tools for designing, testing, and debugging. Postman streamlines the development process, ensuring efficient communication and integration between different software components.<br><br>

@@ -6,7 +6,7 @@ By Shivesh Gupta and Pranav Prakash
 
 
 
-## At the end of this session, you will learn
+## In this session, you will learn
 
 - **Backend Basics**
   - Need for backend
@@ -24,18 +24,17 @@ By Shivesh Gupta and Pranav Prakash
   - Data representation
   - Tables
   - Links
-- **CSS**
-  - Role of CSS
-  - Syntax
-  - Selectors
-  - Common CSS Properties
-  - Centering a Div
-  - Responsive design
+
 -  **Creating your own webpages**
 
- 
-[HTML >>](html.md)    
-[CSS >>](css.md)
+## Postman
+Postman is a comprehensive API development and testing platform. It simplifies the creation and management of APIs by offering tools for designing, testing, and debugging. Postman streamlines the development process, ensuring efficient communication and integration between different software components.
+<br><br>
+Follow the steps mentioned in [Postman.md](Postman.md) file to use Postman.
+
+
+## Resources
+All the resources for this session are mentioned [here](resources.md).
 
 
 

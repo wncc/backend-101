@@ -7,7 +7,7 @@
 
 ## DRF
 - [Serializers](https://www.django-rest-framework.org/tutorial/1-serialization/) in DRF
-- 
+
 
 
 ## Theoretical Concepts

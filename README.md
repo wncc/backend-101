@@ -2,7 +2,7 @@
 
 By Shivesh Gupta and Pranav Prakash
 
-![Alt Text](assets/Django_Logo.png)
+![ALTText](assets/backend.png)
 
 
 

@@ -1,3 +1,6 @@
+## Postman Demo
+- Sign up on [the Postman API platform](https://www.postman.com/). For this session, you will not need to download the Postman app, as we can use Postman in the browser itself
+![image](https://github.com/wncc/backend-101/assets/112401585/849697c9-ac1a-4d3a-b51f-6d2c40600bbf)
 - Once you've signed up, you will reach the landing page. Click on either the '+' next to the tabs or the 'Send an API request' button to open a new page.
 ![plus](https://github.com/wncc/backend-101/assets/112401585/1e882820-cab8-4faf-8979-6bbc0252d889)
 - A new request tab should now have opened. 

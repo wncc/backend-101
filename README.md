@@ -19,7 +19,20 @@ By Shivesh Gupta and Pranav Prakash
 
 - **Django Framework**
   - About Django 
-  - Default Database in Django
+  - Default Database in Djang
+  - Models in Django
+  - Views and Viewsets
+  - URL routing
+  
+- **Django Rest Framework**
+  - Restful APIs
+  - Serializers
+  -
 
+## Postman
+Postman is a comprehensive API development and testing platform. It simplifies the creation and management of APIs by offering tools for designing, testing, and debugging. Postman streamlines the development process, ensuring efficient communication and integration between different software components.<br><br>
+Follow the steps mentioned in [Postman.md](Postman.md) to use Postman.
 
+## Resources
+All the resources used in this session are listed [here](resources.md).
 

@@ -23,7 +23,7 @@ cd testapp
 # Run your project 
 python manage.py runserver
 ```
-Going to [localhost:8000](http://localhost:8000)
+Going to [localhost:8000](http://localhost:8000), you should be able to see this page
 ![image](https://github.com/wncc/backend-101/assets/112401585/ea1af057-c50b-4286-94c9-85d28d3e7966)
 
 View Django Installation Page

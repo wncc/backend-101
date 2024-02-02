@@ -1,4 +1,6 @@
 First, open your terminal and create a new virtual environment. 
+> Note: You might run into some issues on Linux while running `python`/`pip`. Try running `python3`/`pip3` instead.
+> This is because some Linux programs only run on Python v2, so Python v3 sometimes have a different name
 ```shell
 # Create a new virtual environment
 python -m venv venv
@@ -46,7 +48,7 @@ python manage.py createsuperuser
 <br> 
 
 Now, let's go to the admin site provided by Django and try to login with the admin credentials we just created.<br>
-Go to [`localhost:8000/admin/`](https://localhost:8000/admin/) and fill in the required details.<br><br>
+Go to [`localhost:8000/admin/`](http://localhost:8000/admin/) and fill in the required details.<br><br>
 
 
 Before moving forward, let's have a look at the SQL data generated so far. In order to do so we need to install **SQLite Viewer**.<br>
@@ -61,7 +63,7 @@ This will create a folder in your working directory by the name `myapp`. This fo
 
 
 
-Within the same folder we will now create a `url.py` file and type in the following code.
+Within the same folder we will now create a `urls.py` file and type in the following code.
 
 ```python
 from django.urls import path
@@ -74,7 +76,7 @@ urlpatterns = [
 <br>
 
 
-Now, we will create a `view` in our Django app.<br>
+Now, we will create a `View` in our Django app.<br>
 Open `myapp/views.py` and type in the following code.
 
 ```python
@@ -112,7 +114,7 @@ INSTALLED_APPS = [
 
 ```
 
-Now, if we go to [`localhost:8000/api/test/`](https://localhost:8000/api/test/), we will be able to see something like the following image.<br>
+Now, if we go to [`localhost:8000/api/test`](http://localhost:8000/api/test), we will be able to see something like the following image.<br>
 
 ![image](assets/test.png)
 
@@ -136,6 +138,17 @@ Now, it's time to use the `Item` model that we created sometime ago. But, in ord
 ```shell
 python manage.py makemigrations
 python manage.py migrate
+```
+
+If you look at the admin site right now however, you won't be able to see any **Items**. For this, you need to first register the model onto the admin site.
+
+You can do this in `myapp/admin.py`.
+```python
+from django.contrib import admin
+# Import the model 
+from .models import Item
+# Register it on the admin site
+admin.site.register(Item)
 ```
 
 ### So far, so good !!!

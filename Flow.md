@@ -61,7 +61,7 @@ This will create a folder in your working directory by the name `myapp`. This fo
 
 
 
-Within the same folder we will now create a `url.py` file and type in the following code.
+Within the same folder we will now create a `urls.py` file and type in the following code.
 
 ```python
 from django.urls import path

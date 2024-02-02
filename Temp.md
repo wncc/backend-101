@@ -143,4 +143,17 @@ pip install djangorestframework
 ```
 After installing DRF, we need to go to `settings.py` and add `rest_framework` to the`INSTALLED_APPS` list.<br>
 
+Now, we'll create a serializer for the `Item` model. For that, first we need to make a `serializers.py` file inside the `myapp` folder.<br>
+
+Now, go to the `serializers.py` and add the following code to it.
+```python
+from rest_framework import serializers
+from .models import Item
+
+class ItemSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Item
+        fields = '__all__'
+```
+
 

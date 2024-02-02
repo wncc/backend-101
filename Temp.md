@@ -136,7 +136,7 @@ python manage.py migrate
 
 ### So far, so good !!!
 
-Next we'll be installing important tool for buiding web APIs, namely "Django Rest Framework".<br>
+Next we'll be installing another important tool for building web APIs, namely "Django Rest Framework".<br>
 Go to the terminal and run the following command.
 ```shell
 pip install djangorestframework

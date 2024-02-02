@@ -23,7 +23,7 @@ cd testapp
 # Run your project 
 python manage.py runserver
 ```
-Going to [localhost:8000](http://localhost:8000), you should be able to see this page<br><br>
+Going to [`localhost:8000`](http://localhost:8000), you should be able to see this page<br><br>
 ![image](assets/Django_Install.png)
 
 Django migrations are a way to propagate changes you make to your models (adding a field, deleting a model, etc.) into your database schema.
@@ -52,12 +52,13 @@ Go to [`localhost:8000/admin/`](https://localhost:8000/admin/) and fill in the r
 Before moving forward, let's have a look at the SQL data generated so far. In order to do so we need to install **SQLite Viewer**.<br>
 Now, to view `auth_user`open the `db.sqlite` file.
 
-It's time to create our first webapp in Django. Type the following command in your shell.
+It's time to create our first Djangoapp. Type the following command in your shell.
 ```shell
 python manage.py startapp myapp
 ```
 This will create a folder in your working directory by the name `myapp`. This folder will contain multiple python files.<br>
 Within the same folder we will now create a `url.py` file and type in the following code.
+
 ```python
 from django.urls import path
 from .views import test
@@ -67,6 +68,7 @@ urlpatterns = [
 ]
 ```
 <br>
+
 Now, in `myapp/models.py`, we'll create a model for item. Go to `myapp/models.py` file and copy the following code.
 
 ```python
@@ -80,7 +82,56 @@ class Item(models.Model):
     description = models.TextField()
     price = models.IntegerField()
 ```
-pip install djangorestframework
+
+Now, we will create a `view` in our Django app.<br>
+Open `myapp/views.py` and type in the following code.
+
+```python
+from django.http import HttpResponse
+from .models import Item
+# Create your views here.
+
+def test(request):
+    return HttpResponse('<h1>Test</h1>')
+```
+
+It's time to configure the urls for the views we just created in our app.<br>
+In `myapp/urls.py` type in the following:
+
+```python
+from django.urls import path
+from .views import test
+
+urlpatterns = [
+    path('test', test, name='test'),
+
+]
+```
+
+We also need to configure the `testapp/urls.py` to include the urls of our Django app in our project.<br>
+Open `testapp/urls.py` and type in the following:
+
+```python
+from django.contrib import admin
+from django.urls import include, path
 
 
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('api/', include("myapp.urls"))
+]
+```
+Now, if we go to [`localhost:8000/api/test/`](https://localhost:8000/api/test/), we will be able to see something like the following image.<br>
+
+![image](assets/test.png)
+
+Now, it's time to use the `Item` model that we created sometime ago. But, in order to so, we first need to apply the model to our database. In your terminal, run the followig commands.
+
+```shell
+python manage.py makemigrations
+python manage.py migrate
+```
+
+### So far, so good !!!
+pip install djangorestframewok
 

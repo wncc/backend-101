@@ -121,6 +121,8 @@ urlpatterns = [
     path('api/', include("myapp.urls"))
 ]
 ```
+Last thing we need to do is tell the project that `myapp` is a part of this project. For, that we need to go to `settings.py` and add `myapp` in the `INSTALLED_APPS` list.<br>
+
 Now, if we go to [`localhost:8000/api/test/`](https://localhost:8000/api/test/), we will be able to see something like the following image.<br>
 
 ![image](assets/test.png)
@@ -133,5 +135,12 @@ python manage.py migrate
 ```
 
 ### So far, so good !!!
-pip install djangorestframewok
+
+Next we'll be installing important tool for buiding web APIs, namely "Django Rest Framework".<br>
+Go to the terminal and run the following command.
+```shell
+pip install djangorestframework
+```
+After installing DRF, we need to go to `settings.py` and add `rest_framework` to the`INSTALLED_APPS` list.<br>
+
 

@@ -11,6 +11,8 @@
   <img src="https://github.com/wncc/backend-101/assets/112401585/dfd9112c-2efb-4766-9612-3b4bebaf4312">
 - ### Try adding query params to your request, by mentioning a name and value (the description is optional and not used in the actual call).
   <img src="https://github.com/wncc/backend-101/assets/112401585/2dbca7b3-33e6-48cd-ad89-c15d06f84724">
+- ### When making PUT or POST requests, we instead put data in the request *Body*, which is a different tab.
+  ![alt text](assets/image.png)
 
 - ### To interface with `localhost`, you will need to download the Postman Desktop Agent (you can also download the whole app, but for this session we recommend going with the agent)
   ![image](https://github.com/wncc/backend-101/assets/112401585/9e0b3b53-9fc6-4ca6-8fb3-496fba598ba8)
